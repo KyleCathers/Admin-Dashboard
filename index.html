@@ -4,9 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="styles.html">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="sidebar">
+            <div class="brandbox">
+                <div class="logo">
+                    <img src="./images/snail.png" alt="logo">
+                </div>
+                <div class="text">Dashboard</div>
+            </div>
+            <div class="navigationtop">
+                <a href="#" class="home" title="Home">
+                    <div class="logo">
+                        <img src="./images/homeIcon.png" alt="home"/>
+                    </div>
+                    <div>Home</div>
+                </a>
+                <a href="#" class="profile" title="Profile">
+                    <div class="logo">
+                        <img src="./images/profileIcon.png" alt="logo">
+                    </div>
+                    <div>Profile</div>
+                </a>
+                <a href="#" class="messages" title="Messages">
+                    <div class="logo">
+                        <img src="./images/messagesIcon.png" alt="logo">
+                    </div>
+                    <div>Messages</div>
+                </a>
+                <a href="#" class="history" title="History">
+                    <div class="logo">
+                        <img src="./images/historyIcon.png" alt="logo">
+                    </div>
+                    <div>History</div>
+                </a>
+                <a href="#" class="tasks">
+                    <div class="logo">
+                        <img src="./images/tasksIcon.png" alt="logo" title="Tasks">
+                    </div>
+                    <div>Tasks</div>
+                </a>
+                <a href="#" class="communities" title="Communities">
+                    <div class="logo">
+                        <img src="./images/communitiesIcon.png" alt="logo">
+                    </div>
+                    <div>Communities</div>
+                </a>
+            </div>
+            <div class="navigationbottom">
+                <a href="#" class="settings" title="Settings">
+                    <div class="logo">
+                        <img src="./images/settingsIcon.png" alt="logo">
+                    </div>
+                    <div>Settings</div>
+                </a>
+                <a href="#" class="support" title="Support">
+                    <div class="logo">
+                        <img src="./images/supportIcon.png" alt="logo">
+                    </div>
+                    <div>Support</div>
+                </a>
+                <a href="#" class="privacy" title="Privacy">
+                    <div class="logo">
+                        <img src="./images/privacyIcon.png" alt="logo">
+                    </div>
+                    <div>Privacy</div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="header">
+            <div class="topRow">
+                <div class="searchBar">
+                    <button type="button">
+                        <img src="./images/searchIcon.png" alt="Search Icon">
+                    </button>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="buttons">
+                    <a href="https://github.com/KyleCathers" class="githubLogo">
+                        <img src="./images/githubLogo.png" alt="Github Logo">
+                    </a>
+                    <a href="https://www.theodinproject.com" class="odinLogo">
+                        <img src="./images/odinLogo.png" alt="Odin Logo">
+                    </a>
+                    <div class="odin">Odin Project</div>
+                </div>
+            </div>
+            <div class="bottomRow">
+                <a href="https://www.theodinproject.com" class="odinLogo">
+                    <img src="./images/odinLogo.png" alt="Odin Logo">
+                </a>
+                <div class="titleText">Kyle Cathers</div>
+                <button class="new">New</button>
+                <button class="upload">Upload</button>
+                <button class="share">Share</button>
+            </div>
+        </div>
+
+        <div class="mainContent">
+            <div class="projectsContainer">
+                <div class="title">Projects</div>
+                <div class="projects">
+                    <div class="projectCard software" id="adminDashboard"></div>
+                    <div class="projectCard software" id="signupForm"></div>
+                    <div class="projectCard software" id="calculator"></div>
+                    <div class="projectCard software" id="rockPaperScissors"></div>
+                    <div class="projectCard software" id="etchASketch"></div>
+                    <div class="projectCard software" id="odinRecipes"></div>
+                    <div class="projectCard hardware" id="processor"></div>
+                    <div class="projectCard hardware" id="dualbuckPCB"></div>
+                    <div class="projectCard hardware" id="robotArm"></div>
+                    <div class="projectCard hardware" id="alarmClock"></div>
+                    <div class="projectCard hardware" id="cordicFSM"></div>
+                </div>
+            </div>
+            <div class="jsExercisesContainer">
+                <div class="title">JavaScript Exercises</div>
+                <div class="jsExercises"></div>
+            </div>
+            <div class="cssExercisesContainer">
+                <div class="title">CSS Exercises</div>
+                <div class="cssExercises"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
