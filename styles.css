@@ -192,47 +192,204 @@ button img {
 
 /*                      MAIN CONTENT SECTION                              */
 
+/* Javascript exercises: 
+    01_helloworld
+    02_repeatString
+    03_reverseString
+    04_removeFromArray
+    05_sumAll
+    06_leapYears
+    07_tempConversion
+    08_calculator
+    09_palindromes
+    10_fibonacci
+    11_getTheTitles
+    12_findTheOldest
+
+CSS exercises: 
+    foundations
+        01-css-methods
+        02-class-id-selectors
+        03-grouping-selectors
+        04-chaining-selectors
+        05-descendant-combinator
+        06-cascade-fix
+
+    margin and padding
+        01-margin-and-padding-1
+        02-margin-and-padding-2
+        
+    flex
+        01-flex-center
+        02-flex-header
+        03-flex-header-2
+        04-flex-information
+        05-flex-modal
+        06-flex-layout
+        07-flex-layout-2
+
+    grid
+        01-grid-layout-1
+        02-grid-layout-2
+        03-grid-layout-3
+*/
+
 .mainContent {
     grid-column: 2 / 5;
     grid-row: 2 / 6;
     background-color: #f5fff5;
     display: grid;
-    grid-template-columns: 4fr 4fr 3fr;
-    grid-template-rows: repeat(6 1fr);
-    max-height: 100%;
+    grid-template-columns: 2fr 1fr;
     overflow-y: scroll;
+    padding: 0px 20px 0px 20px;
+    gap: 20px;
 }
 
 .projectsContainer {
-    grid-column: 1 / 3;
-    grid-row: 1 / 7;
+    grid-column: 1 / 2;
     display: grid;
-    grid-template-rows: 1fr 24fr;
+    grid-template-rows: 60px calc(100% - 60px);
 }
 
 .projects {
-    border: solid black 1px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
 }
 
 .projectCard {
+    border-radius: 20px;
     border: solid black 1px;
-    height: 300px;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+    grid-template-rows: 1fr 10fr 2fr;
+    padding: 20px 40px 20px 40px;
+    box-sizing: border-box;
+    column-gap: 10px;
+}
+
+.projectCard .image {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    display: grid;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./images/LandingPageProject.png);     /*delete later*/
+    border-radius: 1rem;
+}
+
+.cardTitle,
+.tag {
+    display: grid;
+    align-items: center;
+    font-weight: bold;
+}
+
+.cardTitle {
+    font-size: 1.3rem;
+}
+
+.tag {
+    text-align: end;
+    font-size: 1rem;
+    grid-column: 2 / 4;
+
+}
+
+.description {
+    padding-top: 10px;
+    display: grid;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.liveButton,
+.githubButton {
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.liveButton {
+    background-image: url(./images/liveIcon.png);
+}
+
+.githubButton {
+    background-image: url(./images/githubLogo.png);
+}
+
+#signupForm .image {
+    background-image: url(./images/signupformProject.png);
+}
+
+#calculator .image {
+    background-image: url(./images/calculatorProject.png);
+}
+
+#etchASketch .image {
+    background-image: url(./images/etchasketchProject.png);
+}
+
+#processor .image {
+    background-image: url(./images/processorProject.png);
+}
+
+#dualbuckPCB .image {
+    background-image: url(./images/dualbuckProject.png);
+}
+
+#robotArm .image {
+    background-image: url(./images/robotarmProject.png);
+}
+
+#rockPaperScissors .image {
+    background-image: url(./images/rpsProject.png);
+}
+
+#landingPage .image {
+    background-image: url(./images/LandingPageProject.png);
+}
+
+#odinRecipes .image {
+    background-image: url(./images/recipeProject.png);
+}
+
+#alarmClock .image {
+    background-image: url(./images/alarmclockProject.jpg);
+}
+
+#cordicFSM .image {
+    background-image: url(./images/cordicFSMProject.png);
 }
 
 .jsExercisesContainer {
     grid-column: 3 / 4;
     grid-row: 1 / 4;
+    height: 50%;
+    display: grid;
+    grid-template-rows: 60px calc(100% - 60px);
 }
 
-.cssExercsisesContainer {
+.jsExercises,
+.cssExercises {
+    border: solid black 1px;
+    border-radius: 20px;
+}
+
+.cssExercisesContainer {
     grid-column: 3 / 4;
     grid-row: 4 / 7;
+    height: 50%;
+    display: grid;
+    grid-template-rows: 60px calc(100% - 60px);
 }
 
 .title {
     font-size: 1.4rem;
     font-weight: bold;
-    padding: 10px 0px 0px 10px;
+    padding: 20px 0px 0px 10px;
 }
