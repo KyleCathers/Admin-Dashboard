@@ -190,54 +190,10 @@ button img {
     font-weight: bold;
 }
 
-/*                      MAIN CONTENT SECTION                              */
-
-/* Javascript exercises: 
-    01_helloworld
-    02_repeatString
-    03_reverseString
-    04_removeFromArray
-    05_sumAll
-    06_leapYears
-    07_tempConversion
-    08_calculator
-    09_palindromes
-    10_fibonacci
-    11_getTheTitles
-    12_findTheOldest
-
-CSS exercises: 
-    foundations
-        01-css-methods
-        02-class-id-selectors
-        03-grouping-selectors
-        04-chaining-selectors
-        05-descendant-combinator
-        06-cascade-fix
-
-    margin and padding
-        01-margin-and-padding-1
-        02-margin-and-padding-2
-        
-    flex
-        01-flex-center
-        02-flex-header
-        03-flex-header-2
-        04-flex-information
-        05-flex-modal
-        06-flex-layout
-        07-flex-layout-2
-
-    grid
-        01-grid-layout-1
-        02-grid-layout-2
-        03-grid-layout-3
-*/
-
 .mainContent {
     grid-column: 2 / 5;
     grid-row: 2 / 6;
-    background-color: #f5fff5;
+    background-color: #eeffee;
     display: grid;
     grid-template-columns: 2fr 1fr;
     overflow-y: scroll;
@@ -278,7 +234,6 @@ CSS exercises:
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(./images/LandingPageProject.png);     /*delete later*/
     border-radius: 1rem;
 }
 
@@ -366,10 +321,13 @@ CSS exercises:
     background-image: url(./images/cordicFSMProject.png);
 }
 
+.exercisesContainer {
+    min-width: 240px;
+}
+
 .jsExercisesContainer {
     grid-column: 3 / 4;
     grid-row: 1 / 4;
-    height: 50%;
     display: grid;
     grid-template-rows: 60px calc(100% - 60px);
 }
@@ -383,7 +341,6 @@ CSS exercises:
 .cssExercisesContainer {
     grid-column: 3 / 4;
     grid-row: 4 / 7;
-    height: 50%;
     display: grid;
     grid-template-rows: 60px calc(100% - 60px);
 }
@@ -392,4 +349,16 @@ CSS exercises:
     font-size: 1.4rem;
     font-weight: bold;
     padding: 20px 0px 0px 10px;
+}
+
+.exercise {
+    min-height: 40px;
+    display: block;
+    box-sizing: border-box;
+    border-bottom: dashed black 1px;
+    margin: 20px 20px 0px 20px;
+}
+
+.exercise:last-child {
+    border: 0;
 }
